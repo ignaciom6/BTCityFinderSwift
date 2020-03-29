@@ -6,4 +6,12 @@
 //  Copyright © 2020 Ignacio. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BTCityListViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}
