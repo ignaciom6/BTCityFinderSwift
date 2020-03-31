@@ -9,5 +9,5 @@
 import Foundation
 
 protocol BTModelManager {
-    func createModelWithArray(array: [AnyHashable]) -> [AnyHashable]
+    func createModelWithArray(array: [AnyHashable]) -> [BTBaseModel]
 }

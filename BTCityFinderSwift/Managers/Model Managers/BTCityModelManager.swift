@@ -9,7 +9,7 @@
 import UIKit
 
 class BTCityModelManager: BTModelManager {
-    func createModelWithArray(array: [AnyHashable]) -> [AnyHashable] {
+    func createModelWithArray(array: [AnyHashable]) -> [BTBaseModel] {
         var citiesResultArray: [BTCityModel] = []
         
         for cityDict in array {
@@ -17,6 +17,6 @@ class BTCityModelManager: BTModelManager {
             citiesResultArray.append(city)
         }
 
-        return citiesResultArray as! [AnyHashable]
+        return citiesResultArray
     }
 }

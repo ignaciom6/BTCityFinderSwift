@@ -10,7 +10,7 @@ import UIKit
 
 class BTListManager: NSObject {
 
-    func getArrayForFile(file: String, type: String, modelManager modelMgr: BTModelManager, withCompletion completion: @escaping (_ value: [AnyHashable]?, _ error: Error?) -> Void) {
+    func getArrayForFile(file: String, type: String, modelManager modelMgr: BTModelManager, withCompletion completion: @escaping (_ value: [BTBaseModel]?, _ error: Error?) -> Void) {
         let cityListService = BTListFromFileService()
         
         cityListService.getArrayFromFile(file: file, format: type) { (value, error) in

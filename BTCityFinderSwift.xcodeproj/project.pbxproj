@@ -11,8 +11,12 @@
 		4F5630C12431124C0023BEEC /* BTListFromFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630C02431124C0023BEEC /* BTListFromFileService.swift */; };
 		4F5630C4243116260023BEEC /* BTModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630C3243116260023BEEC /* BTModelManager.swift */; };
 		4F5630C7243116E60023BEEC /* BTCityModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630C6243116E60023BEEC /* BTCityModelManager.swift */; };
+		4F5630C924311C3F0023BEEC /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F5630C824311C3F0023BEEC /* cities.json */; };
+		4F5630CB24311E120023BEEC /* BTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630CA24311E120023BEEC /* BTBaseModel.swift */; };
+		4F5630CE2432BC800023BEEC /* BTArrayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630CD2432BC800023BEEC /* BTArrayUtils.swift */; };
+		4F5630D02433D17C0023BEEC /* BTSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630CF2433D17B0023BEEC /* BTSpinner.swift */; };
+		4F5630D22433DF630023BEEC /* BTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5630D12433DF630023BEEC /* BTConstants.swift */; };
 		4FE2251E2409A7A2001DE35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2251D2409A7A2001DE35F /* AppDelegate.swift */; };
-		4FE225202409A7A2001DE35F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2251F2409A7A2001DE35F /* SceneDelegate.swift */; };
 		4FE225252409A7A2001DE35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE225232409A7A2001DE35F /* Main.storyboard */; };
 		4FE225272409A7A9001DE35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE225262409A7A9001DE35F /* Assets.xcassets */; };
 		4FE2252A2409A7A9001DE35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE225282409A7A9001DE35F /* LaunchScreen.storyboard */; };
@@ -37,9 +41,13 @@
 		4F5630C02431124C0023BEEC /* BTListFromFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTListFromFileService.swift; sourceTree = "<group>"; };
 		4F5630C3243116260023BEEC /* BTModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTModelManager.swift; sourceTree = "<group>"; };
 		4F5630C6243116E60023BEEC /* BTCityModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCityModelManager.swift; sourceTree = "<group>"; };
+		4F5630C824311C3F0023BEEC /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		4F5630CA24311E120023BEEC /* BTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBaseModel.swift; sourceTree = "<group>"; };
+		4F5630CD2432BC800023BEEC /* BTArrayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTArrayUtils.swift; sourceTree = "<group>"; };
+		4F5630CF2433D17B0023BEEC /* BTSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTSpinner.swift; sourceTree = "<group>"; };
+		4F5630D12433DF630023BEEC /* BTConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTConstants.swift; sourceTree = "<group>"; };
 		4FE2251A2409A7A2001DE35F /* BTCityFinderSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCityFinderSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE2251D2409A7A2001DE35F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FE2251F2409A7A2001DE35F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4FE225242409A7A2001DE35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE225262409A7A9001DE35F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE225292409A7A9001DE35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5630C3243116260023BEEC /* BTModelManager.swift */,
+				4F5630CA24311E120023BEEC /* BTBaseModel.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -101,6 +110,16 @@
 				4F5630C6243116E60023BEEC /* BTCityModelManager.swift */,
 			);
 			path = "Model Managers";
+			sourceTree = "<group>";
+		};
+		4F5630CC2432BC560023BEEC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F5630CD2432BC800023BEEC /* BTArrayUtils.swift */,
+				4F5630CF2433D17B0023BEEC /* BTSpinner.swift */,
+				4F5630D12433DF630023BEEC /* BTConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		4FE225112409A7A2001DE35F = {
@@ -129,12 +148,13 @@
 				4F5630BC243111DC0023BEEC /* Managers */,
 				4F5630BF2431121F0023BEEC /* Services */,
 				4F5630C2243115D90023BEEC /* Protocols */,
+				4F5630CC2432BC560023BEEC /* Utils */,
 				4FE2251D2409A7A2001DE35F /* AppDelegate.swift */,
-				4FE2251F2409A7A2001DE35F /* SceneDelegate.swift */,
 				4FE225232409A7A2001DE35F /* Main.storyboard */,
 				4FE225262409A7A9001DE35F /* Assets.xcassets */,
 				4FE225282409A7A9001DE35F /* LaunchScreen.storyboard */,
 				4FE2252B2409A7A9001DE35F /* Info.plist */,
+				4F5630C824311C3F0023BEEC /* cities.json */,
 			);
 			path = BTCityFinderSwift;
 			sourceTree = "<group>";
@@ -246,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5630C924311C3F0023BEEC /* cities.json in Resources */,
 				4FE2252A2409A7A9001DE35F /* LaunchScreen.storyboard in Resources */,
 				4FE225272409A7A9001DE35F /* Assets.xcassets in Resources */,
 				4FE225252409A7A2001DE35F /* Main.storyboard in Resources */,
@@ -269,12 +290,15 @@
 				4FE225412409A7EC001DE35F /* BTCityModel.swift in Sources */,
 				4F5630C4243116260023BEEC /* BTModelManager.swift in Sources */,
 				4F5630BE243112090023BEEC /* BTListManager.swift in Sources */,
+				4F5630D22433DF630023BEEC /* BTConstants.swift in Sources */,
 				4F5630C12431124C0023BEEC /* BTListFromFileService.swift in Sources */,
+				4F5630CE2432BC800023BEEC /* BTArrayUtils.swift in Sources */,
 				4FE225432409A916001DE35F /* BTCityCoordinatesDataModel.swift in Sources */,
 				4F5630C7243116E60023BEEC /* BTCityModelManager.swift in Sources */,
+				4F5630D02433D17C0023BEEC /* BTSpinner.swift in Sources */,
+				4F5630CB24311E120023BEEC /* BTBaseModel.swift in Sources */,
 				4FE225462409B255001DE35F /* BTCityListViewController.swift in Sources */,
 				4FE2251E2409A7A2001DE35F /* AppDelegate.swift in Sources */,
-				4FE225202409A7A2001DE35F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BTCityFinderSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BTCityFinderSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

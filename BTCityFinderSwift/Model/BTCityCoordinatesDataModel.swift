@@ -8,15 +8,15 @@
 
 import Foundation
 
-private let kLatitudeKey = "latitude"
-private let kLongitudeKey = "longitude"
+private let kLatitudeKey = "lat"
+private let kLongitudeKey = "lon"
 
-class BTCityCoordinatesDataModel {
+class BTCityCoordinatesDataModel: BTBaseModel {
     
     var latitude: Double?
     var longitude: Double?
     
-    init(dictionary: [AnyHashable : Any]?) {
+    required init(dictionary: [AnyHashable : Any]?) {
         latitude = dictionary?[kLatitudeKey] as? Double
         longitude = dictionary?[kLongitudeKey] as? Double
     }
